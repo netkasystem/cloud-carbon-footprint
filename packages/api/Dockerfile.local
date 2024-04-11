@@ -1,8 +1,8 @@
 FROM node:18-alpine
 WORKDIR /usr/src/app
 
-COPY ./api/dist ./dist
-COPY ./api/package.json .
+COPY ./packages/api/dist ./dist
+COPY ./packages/api/package.json .
 
 # upgrade yarn to v2.X
 #RUN yarn set version stable
